@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Soundboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2a-QE-9MB">
+                                <rect key="frame" x="107" y="234" width="200" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7h5-9I-XWH"/>
+                                    <constraint firstAttribute="width" constant="200" id="wKV-6j-jaP"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="960x0"/>
+                                <connections>
+                                    <action selector="onWeekndClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4zK-70-2T4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxN-kj-GvD">
+                                <rect key="frame" x="107" y="404" width="200" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="AR2-Hv-1ZY"/>
+                                    <constraint firstAttribute="height" constant="150" id="jz8-qA-6r7"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="e2-3-e1574285664656"/>
+                                <connections>
+                                    <action selector="onTygaClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zcc-Xk-WRg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpn-3v-J2q">
+                                <rect key="frame" x="107" y="64" width="200" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="09x-m1-Tzk"/>
+                                    <constraint firstAttribute="width" constant="200" id="MG3-QL-ivS"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="314d3251d7f439ffd52b7e805ed1c8a11a-30-drake-new.rsocial.w1200"/>
+                                <connections>
+                                    <action selector="onDrakeClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HoB-LT-mPJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LxN-kj-GvD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Crc-PT-1RL"/>
+                            <constraint firstItem="H2a-QE-9MB" firstAttribute="top" secondItem="Qpn-3v-J2q" secondAttribute="bottom" constant="20" id="LM1-39-oY8"/>
+                            <constraint firstItem="Qpn-3v-J2q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Osd-33-8yF"/>
+                            <constraint firstItem="LxN-kj-GvD" firstAttribute="top" secondItem="H2a-QE-9MB" secondAttribute="bottom" constant="20" id="XZX-yf-DBV"/>
+                            <constraint firstItem="H2a-QE-9MB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YiX-Al-lBp"/>
+                            <constraint firstItem="Qpn-3v-J2q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="rbV-a2-w39"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="314d3251d7f439ffd52b7e805ed1c8a11a-30-drake-new.rsocial.w1200" width="1200" height="630"/>
+        <image name="960x0" width="960" height="639"/>
+        <image name="e2-3-e1574285664656" width="688" height="445"/>
+    </resources>
+</document>
